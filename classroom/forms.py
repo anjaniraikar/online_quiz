@@ -25,6 +25,7 @@ class StudentSignUpForm(UserCreationForm):
         widget=forms.CheckboxSelectMultiple,
         required=True
     )
+    email = forms.EmailField()
 
     class Meta(UserCreationForm.Meta):
         model = User
